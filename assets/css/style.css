@@ -766,7 +766,9 @@ footer .down-container .content a:hover{
     #sec1 .ic img {
         scale: 0.6;
     }
-
+    #sec1 {
+        margin-top: 200px;
+    }
     #sec2 .sec2-image {
         width: 350px;
         object-fit: cover;
