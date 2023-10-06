@@ -1,0 +1,481 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PhoneSite</title>
+    <link rel="stylesheet" href="./assets/css/style.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css" />
+</head>
+
+<body>
+
+    <header>
+        <div class="sales">
+            <div class="container text-center pt-2">
+                <h4>Long Weekend Sale Up to 50% OFF <span>Shop Now </span></h4>
+                <i class="fa fa-close" id="sales-close"></i>
+            </div>
+        </div>
+        <nav class="pb-1 main-nav ">
+            <div class="container d-flex align-items-center justify-content-between pt-3">
+                <a href="#" class="navbar-brand order-lg-0">
+                    <img src="./assets/img/logo.jpeg" alt="">
+                </a>
+                <div class="toggle-button bars-close">
+                    <i class=" fas fa-bars" id="bar-button"></i>
+                </div>
+                <div class="order-lg-1 d-flex align-items-center justify-content-center gap-3">
+                    <div class="toggle-shopping">
+                        <i class="fa fa-shopping-cart"></i>
+                    </div>
+                    <div>
+                        <i class="fa fa-heart"></i>
+
+                    </div>
+                    <div>
+                        <i class="fa fa-search"></i>
+                    </div>
+                </div>
+                <ul class=" nav-menu  pt-3 gap-3">
+
+                    <li class="nav-item fw-bold mx-2">
+                        <a class="nav-link" href="#sec1">Collaction</a>
+                    </li>
+                    <li class="nav-item fw-bold mx-2">
+                        <a class="nav-link" href="#sec3">Collaction</a>
+                    </li>
+                    <li class="nav-item fw-bold mx-2">
+                        <a class="nav-link" href="#sec7">shop</a>
+                    </li>
+                    <li class="nav-item fw-bold mx-2">
+                        <a class="nav-link" href="#sec8">android</a>
+                    </li>
+                    <li class="nav-item fw-bold mx-2">
+                        <a class="nav-link" href="#sec8">new arrivels</a>
+                    </li>
+                    <li class="nav-item fw-bold mx-2">
+                        <a class="nav-link" href="#sec8">pages</a>
+                    </li>
+                </ul>
+                <div class=" dropdown order-lg-3">
+                    <button type="button" class="btn btn-secondary dropdown-toggle" data-bs-toggle="dropdown"
+                    aria-expanded="false">Lang</button>
+                    <ul class="dropdown-menu menuflags">
+                        
+                    </ul>
+                </div>
+            </div>
+            </div>
+        </nav>
+
+        <aside class="Sidbar">
+            <nav class="menu d-flex justify-content-ce align-items-start flex-column ">
+                <button class="close-button-left ">
+                    <i class="fa fa-close"></i>
+                </button>
+                <a href="#" class="menu-item mb-3 is-active">home</a>
+                <a href="#" class="menu-item mb-3">Collaction</a>
+                <a href="#" class="menu-item mb-3">shop</a>
+                <a href="#" class="menu-item mb-3">android</a>
+                <a href="#" class="menu-item mb-3">pages</a>
+                <a href="#" class="menu-item mb-3">new arrivels</a>
+            </nav>
+        </aside>
+        <div class="Sidbar-right">
+            <nav class="menu-right d-flex justify-content-center align-items-center flex-column fw-bolder pe-4">
+                <button class="close-button float-end text-right">
+                    <i class="fa fa-close"></i>
+                </button>
+                <h3 href="#" class="menu-item mb-3 pt-4 is-active">Your cart is empty</h3>
+                <button class="side-button fw-bold">Continue Shopping</button>
+                <h4 class="pt-3">
+                    have an acount ?
+                </h4>
+                <span>
+                    <a href="#">Log in</a> to checkout faster
+                </span>
+                <div class="android-slide d-flex justify-content-center align-items-center flex-column">
+                    <img src="./assets/img/sideimage.jpeg" alt="">
+                    <div>
+                        <a class="fs-5" href="#">Andriod phone</a>
+                        <i class="fa fa-arrow-right"></i>
+                    </div>
+                </div>
+            </nav>
+        </div>
+        <div id="carouselExampleCaptions" class="carousel slide carousel-fade" data-bs-ride="carousel">
+            <div class="carousel-inner">
+                <div class="carousel-item active" data-bs-interval="4000">
+                    <img src="./assets/img/phono-slider-1.jpeg" class="d-block w-100" alt="...">
+                    <div class="carousel-caption1  text-center">
+                        <h2 class="mb-2">Zania Black Edition</h2>
+                        <h2 class="mb-2">Curvy Bevel Dual Audio</h2>
+                        <button class="mt-3 ">Shope Now</button>
+                    </div>
+                </div>
+                <div class="carousel-item" data-bs-interval="4000">
+                    <img src="./assets/img/phono-slider-2.jpeg" class="d-block w-100" alt="...">
+                    <div class="carousel-caption2 text-center">
+                        <h3 class="mb-3">4K Resolution</h3>
+                        <h1 class="mb-3">Exclusive Steel Frame</h1>
+                        <button class="  mt-2">buy Now</button>
+                    </div>
+                </div>
+                <div class="carousel-item" data-bs-interval="4000">
+                    <img src="./assets/img/phono-slider-3.jpeg" class="d-block w-100" alt="...">
+                    <div class="carousel-caption1 text-center">
+                        <h2 class="mb-2">Delta Zertiga Processor</h2>
+                        <h2 class="mb-2">Full Screen Display</h2>
+                        <button class="mt-3 ">Shope Now</button>
+                    </div>
+                </div>
+            </div>
+            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions"
+                data-bs-slide="prev">
+                <span class="carousel-control-prev-icon " aria-hidden="true"></span>
+                <span class="visually-hidden">Previous</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions"
+                data-bs-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Next</span>
+            </button>
+        </div>
+        <div class="fixed-bottom">
+            <div class="container">
+                <div class="Cookies text-center ">
+                    <p class="pt-2">Accept Our Cookies Ya Jad3</p>
+                    <div class="Cookies-button" >
+                        <button class=" " id="accept-button">Accept</button>
+                        <button class=" " id="decline-button">Decline</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+    <section id="sec1">
+        <div class="container vh-100 mt-5">
+            <div class="vh-100 d-flex align-items-center justify-content-center flex-column gap-5 ">
+                <h1 class="fw-bold">WHAT MAKES THE ESSENTIAL DIFFERENT ?</h1>
+                <p class="fs-3 opacity-50 second-text ">EXPERIENCE HIGH PERFORMANCE AND SECURE</p>
+                <div class=" d-flex align-items-center justify-content-center flex-wrap">
+                    <div class="ic text-center">
+                        <img src="./assets/img/ic12.jpeg" alt="">
+                        <h4 class="mt-3 mb-3 me-3">Perfect Cut</h4>
+                        <h3>Dual Camera</h3>
+                        <p class="obacity-50">Tristique senectus et netus et malesuada ant reiet fames.</p>
+                    </div>
+                    <div class=" ic text-center">
+                        <img src="./assets/img/ic11.jpeg" alt="">
+                        <h4 class="mt-3 mb-3 me-3">Perfect Cut</h4>
+                        <h3>Dual Camera</h3>
+                        <p class="obacity-50">Tristique senectus et netus et malesuada ant reiet fames.</p>
+                    </div>
+                    <div class="ic text-center">
+                        <img src="./assets/img/ic12.jpeg" alt="">
+                        <h4 class="mt-3 mb-3">Perfect Cut</h4>
+                        <h3>Dual Camera</h3>
+                        <p class="obacity-50">Tristique senectus et netus et malesuada ant reiet fames.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section id="sec2">
+        <div class="container">
+            <div class="vh-100 d-flex align-items-center justify-content-center flex-column gap-5 text-center">
+                <h1 class="fw-semibold">POSSIBILITIES. PERFORMANCE. POWER.</h1>
+                <p class="fs-3 opacity-50 second-text ">FASTER PROCESSING WITH LESS POWER</p>
+                <img class="sec2-image" src="./assets/img/hotspot-sec2.jpeg" alt="">
+                <div
+                    class="sec2-specification position-relative d-flex align-items-center justify-content-center flex-wrap">
+                    <div>
+                        <div class="point">
+                            <div class="spinner-grow text-danger spinner-1 " role="status">
+                                <span class="visually-hidden">Loading...</span>
+                            </div>
+                        </div>
+                        <div
+                            class="spec-info d-flex align-items-center justify-content-center flex-column  text-center ">
+                            <img src="./assets/img/ic7.jpeg" alt="">
+                            <h5 class="mt-4">SCORPION PROCESSOR</h5>
+                            <p>Tristique senectus et netus et malesuada fames ac turpis.</p>
+                        </div>
+                    </div>
+                    <div>
+                        <div class="point2">
+                            <div class="spinner-grow text-danger spinner-1 " role="status">
+                                <span class="visually-hidden">Loading...</span>
+                            </div>
+                        </div>
+                        <div
+                            class="spec-info2 d-flex align-items-center justify-content-center flex-column  text-center  ">
+                            <img src="./assets/img/ic10.jpeg" alt="">
+                            <h5 class="mt-4">DUAL SIM CARD</h5>
+                            <p>Donec ultrices tincidunt arcu non sodales neque sodales ut.</p>
+                        </div>
+                    </div>
+                    <div>
+                        <div class="point">
+                            <div class="spinner-grow text-danger spinner-1 " role="status">
+                                <span class="visually-hidden">Loading...</span>
+                            </div>
+                        </div>
+                        <div
+                            class="spec-info d-flex align-items-center justify-content-center flex-column  text-center ">
+                            <img src="./assets/img/ic9.jpeg" alt="">
+                            <h5 class="mt-4">48 MB CAMERA</h5>
+                            <p>Cursus euismod quis viverra nibh cras pulvinar mattis nunc sed.</p>
+                        </div>
+                    </div>
+                    <div>
+                        <div class="point2">
+                            <div class="spinner-grow text-danger spinner-1 " role="status">
+                                <span class="visually-hidden">Loading...</span>
+                            </div>
+                        </div>
+                        <div
+                            class=" spec-info2 d-flex align-items-center justify-content-center flex-column  text-center ">
+                            <img src="./assets/img/ic8.png" alt="">
+                            <h5 class="mt-4">48 HRS BACKUP</h5>
+                            <p>Natoque penatibus et magnis dis parturient montes nascetur.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section id="sec3">
+        <div class="container">
+            <div class="vh-100 d-flex align-items-center justify-content-center flex-column gap-5 text-center">
+                <div class="title text-center">
+                    <h1 class=" fw-semibold">INNOVATIVE QUALITIES & FEATURES </h1>
+                    <p class="fs-3 opacity-50 second-text ">SHOW YOURS TO THE WORLD</p>
+                </div>
+                <div class="sec3-all-content d-flex justify-content-between align-items-center gap-2 flex-wrap">
+                    <div class="sec3-content ">
+                        <div class="sec3-text-right d-flex  align-items-start flex-row-reverse gap-3">
+                            <img src="./assets/img/ic5-sec3.png" alt="">
+                            <div class="mb-5 sec3-content-item">
+                                <h5>INTELLIGENT PROCESSOR</h5>
+                                <p>Tellus in hac habitasse platea dictumst vestibulum rhoncus srd mana erti qeueri</p>
+                            </div>
+                        </div>
+                        <div class="sec3-text-right d-flex  align-items-start flex-row-reverse gap-3">
+                            <img src="./assets/img/ic6-sec3.jpeg" alt="">
+                            <div class="mb-5 sec3-content-item">
+                                <h5>HD SURROUND AUDIO</h5>
+                                <p>Sagittis eu volutpat odio ante ut diam quam metus dictfacilisis mauris sit am.</p>
+                            </div>
+                        </div>
+                        <div class="sec3-text-right d-flex  align-items-start flex-row-reverse gap-3">
+                            <img src="./assets/img/ic3-sec3.jpeg" alt="">
+                            <div class="mb-5 sec3-content-item">
+                                <h5>STYLISH BEVEL EDGES</h5>
+                                <p>Dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incidid</p>
+                            </div>
+                        </div>
+                    </div>
+                    <img class="sec3-main-image" src="./assets/img/center-img-sec3.jpeg" alt="">
+                    <div class="sec3-content ">
+                        <div class="sec3-text-left d-flex  align-items-start gap-3">
+                            <img src="./assets/img/ic1-sec3.jpeg" alt="">
+                            <div class="mb-5 sec3-content-item ">
+                                <h5>4.0 WIFI SPECS</h5>
+                                <p>Commodo nulla facilisi nullam vehicula ipsum a arcu sagitis ipsum sed iacus.</p>
+                            </div>
+                        </div>
+                        <div class="sec3-text-left d-flex  align-items-start gap-3">
+                            <img src="./assets/img/ic4-sec3.jpeg" alt="">
+                            <div class="mb-5 sec3-content-item">
+                                <h5>MULIT TASKING & THREADING</h5>
+                                <p>Amet consectetur adipiscing velit laoreet nega id elit pellentesque habitant morbi .
+                                </p>
+                            </div>
+                        </div>
+                        <div class="sec3-text-left d-flex  align-items-start gap-3">
+                            <img src="./assets/img/ic2-sec3.png" alt="">
+                            <div class="mb-5 sec3-content-item">
+                                <h5>CLOUD STORAGE</h5>
+                                <p>Dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididun</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section id="sec4">
+        <div class="container h-100">
+            <div class="text-content d-flex justify-content-center align-items-center flex-column h-100">
+                <h2 class="name">JENNIFER F., CASPER CUSTOMER</h2>
+                <div class="main-text">
+                    <p class="fw-bold">"Unbeatable price, and it’s super comfortable"</p>
+                </div>
+                <button class="sec4-button  mt-2">View More</button>
+            </div>
+        </div>
+    </section>
+    <section id="sec5">
+        <div class="container">
+            <div class=" d-flex align-items-center justify-content-center flex-column gap-5 text-center">
+                <div class="title text-center" id="touch">
+                    <h1 class=" fw-semibold">NEW ARRIVALS</h1>
+                    <p class="fs-3 opacity-50 second-text ">FIND THE PERFECT PHONE FOR YOU</p>
+                </div>
+                <div class="slide-container ">
+                    <div class="slide-content ">
+                        <i class="navigation fa-solid fa-angle-left " id="left"></i>
+                        <div class="new-arrivel-content  ">
+                        </div>
+                        <i class="navigation fa-solid fa-angle-right" id="right"></i>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+    <section id="sec6">
+        <div class="container">
+            <div class=" d-flex align-items-center justify-content-center flex-column gap-5 text-center">
+                <div class="title text-center pt-5">
+                    <h1 class=" fw-semibold">SEE WHY CUSTOMERS LOVE THE OUR MOBILES</h1>
+                    <p class="fs-3 opacity-50 second-text ">DESIGNED TO PERFECTION</p>
+                </div>
+                <div class="main-content d-flex align-items-center justify-content-center flex-wrap">
+                    <img src="./assets/img/bg-1-sec6.jpeg" class="pb-5">
+                    <div id="accordion">
+                        <div class="accordion accordion-flush" id="accordionFlushExample">
+                            <div class="accordion-item mb-3">
+                                <h2 class="accordion-header" id="flush-headingOne">
+                                    <button class="accordion-button accordion-button1 d-flex justify-content-between" type="button" data-bs-toggle="collapse"
+                                        data-bs-target="#flush-collapseOne" aria-expanded="true"
+                                        aria-controls="flush-collapseOne">
+                                        NEW GRADIENT COLOR FINISHES
+                                        <i class="fa fa-minus"></i>
+                                    </button>
+                                </h2>
+                                <div id="flush-collapseOne" class="accordion-collapse collapse show"
+                                    aria-labelledby="flush-headingOne" data-bs-parent="#accordionFlushExample">
+                                    <div class="accordion-body ">Rierem ipsum dolor sit amet, consectetur adipiscing elit,
+                                        sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam
+                                        , quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+                                        Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu
+                                        fugiat nulla pariatur.Excepteur sint occaecat cupidatat non proident,
+                                        sunt in culpa qui official.</div>
+                                </div>
+                            </div>
+                            <div class="accordion-item mb-3">
+                                <h2 class="accordion-header" id="flush-headingTwo">
+                                    <button class="accordion-button accordion-button2 collapsed" type="button" data-bs-toggle="collapse"
+                                        data-bs-target="#flush-collapseTwo" aria-expanded="false"
+                                        aria-controls="flush-collapseTwo">
+                                        FOUR-SIDED CURVED CERAMIC BODY
+                                        <i class="fa fa-plus"></i>
+                                    </button>
+                                </h2>
+                                <div id="flush-collapseTwo" class="accordion-collapse collapse"
+                                    aria-labelledby="flush-headingTwo" data-bs-parent="#accordionFlushExample">
+                                    <div class="accordion-body transparent-bg">
+                                        Lorem ipsum dolor sit amet, consectetur adipiscing elit,
+                                        sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+                                        Ut enim ad minim veniam, quis nostrud exercitation ullamco
+                                        laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor
+                                        in reprehenderit in voluptate velit esse cillum dolore eu fugiat
+                                        nulla pariatur. Excepteur sint occaecat cupidatat non proident,
+                                        sunt in culpa qui official</div>
+                            </div>
+                            <div class="accordion-item mb-3">
+                                <h2 class="accordion-header" id="flush-headingThree">
+                                    <button class="accordion-button accordion-button3 collapsed text-white" type="button" data-bs-toggle="collapse"
+                                        data-bs-target="#flush-collapseThree" aria-expanded="false" aria-controls="flush-collapseThree">
+                                        4000MAH HIGH-CAPACITY BATTERY
+                                        <i class="fa fa-plus"></i>
+                                    </button>
+                                </h2>
+                                <div id="flush-collapseThree" class="accordion-collapse collapse"
+                                    aria-labelledby="flush-headingThree" data-bs-parent="#accordionFlushExample">
+                                    <div class="accordion-body ">Lorem ipsum dolor sit amet, consectetur adipiscing elit,
+                                        sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+                                        Ut enim ad minim veniam, quis nostrud exercitation ullamco
+                                        laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor
+                                        in reprehenderit in voluptate velit esse cillum dolore eu fugiat
+                                        nulla pariatur. Excepteur sint occaecat cupidatat non proident,
+                                        sunt in culpa qui official</div>
+                                </div>
+                            </div>
+                            
+                            <div class="accordion-item mb-3">
+                                <h2 class="accordion-header" id="flush-headinFour">
+                                    <button class="accordion-button accordion-button4 collapsed" type="button" data-bs-toggle="collapse"
+                                        data-bs-target="#flush-collapsFour" aria-expanded="false"
+                                        aria-controls="flush-collapsFour">
+                                        FULLY HIDDEN CAMERA LENS
+                                        <i class="fa fa-plus"></i>
+                                    </button>
+                                </h2>
+                                <div id="flush-collapsFour" class="accordion-collapse collapse"
+                                    aria-labelledby="flush-headinFour" data-bs-parent="#accordionFlushExample">
+                                    <div class="accordion-body ">Lorem ipsum dolor sit amet, consectetur adipiscing elit,
+                                        sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+                                        Ut enim ad minim veniam, quis nostrud exercitation ullamco
+                                        laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor
+                                        in reprehenderit in voluptate velit esse cillum dolore eu fugiat
+                                        nulla pariatur. Excepteur sint occaecat cupidatat non proident,
+                                        sunt in culpa qui official</div>
+                                </div>
+                            </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <footer>
+        <div class=" up-container">
+            <div class="container">
+                <div class="footer-content d-flex align-items-center justify-content-center flex-column gap-5 text-center">
+                    <div class="title text-center" >
+                        <h3>SUBSCRIBE NOW</h3>
+                        <h1 class=" fw-semibold">GET OUR UPDATES ALWAYS FAST</h1>
+                        <p class="fs-4 opacity-50 second-text ">YOUR PERSONAL DATA WILL ALWAYS BE SAFE</p>
+                    </div>
+                    <div class="email-id d-flex flex-nowrap">
+                        <input  type="text" placeholder="Enter Your Email ID">
+                        <i class="fa fa-angle-right"></i>
+                    </div>
+                    <div class="footer-anchor">
+                        <a href="#">Search</a>
+                        <a href="#">help</a>
+                        <a href="#">information</a>
+                        <a href="#">privacy policy</a>
+                        <a href="#">shippeng details</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="constainer down-container">
+            <div class="content ">
+                <div class="info d-flex align-items-center justify-content-center gap-3">
+                    <p class="pt-3">© 2023</p>
+                    <a href="#">Phono (password: buddha)</a>
+                    <a href="#">Design Themes</a>
+                </div>
+                <div>
+                    <a href="#"><img src="./assets/img/mastercard-6.svg" style="width: 80px; height: 40px;"></a>
+                    <a href="#"><img src="./assets/img/visa-10.svg" style="width: 60px; height: 30px;"></a>
+                    <a href="#"><img src="./assets/img/paypal-3.svg" style="width: 80px; height: 40px;" class="ps-3"></a>
+                    <a href="#"><img src="./assets/img/gamex.svg" style="width: 80px; height: 40px;"></a>
+                    <a href="#"><img src="./assets/img/discover-4.svg" style="width: 80px; height: 40px;"></a>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <script src="./assets/js/main.js" ></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+
+</html>

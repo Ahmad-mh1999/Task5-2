@@ -1,0 +1,891 @@
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Roboto:wght@300&family=Cinzel:wght@500&family=Dancing+Script:wght@700&family=Rajdhani:wght@400;500;700&family=Sedgwick+Ave+Display&display=swap');
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    list-style: none;
+    scroll-behavior: smooth;
+}
+
+a {
+    text-decoration: none !important;
+}
+
+header {
+    overflow-x: hidden;
+}
+header .sales{
+    width: 100%;
+    height: 50px;
+    background-color: #000;
+    color: #fff;
+    line-height: 50px;
+    position: relative;
+}
+header .sales i{
+    font-size: 30px;
+    position: absolute;
+    right: 10px;
+    top: 12px;
+    cursor: pointer;
+}
+header .sales span{
+    cursor: pointer;
+}
+header .sales i:hover,header .sales span:hover{
+    color: #eb0028;
+}
+header .main-nav {
+    background-color: white !important;
+}
+
+aside {
+    position: absolute;
+    margin-top: 5px;
+    z-index: 999;
+    display: none;
+    transition: 1s ease-in-out;
+}
+.dropdown{
+    width: 70px;
+}
+.dropdown ul {
+    height: 200px !important;
+    overflow-y: scroll;
+    scroll-margin-right: 10px;
+}
+.dropdown-menu li{
+    cursor: pointer;
+    width: 150px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    text-align: center;
+    line-height: 50px;
+}
+.dropdown-menu img{
+    
+    width: 40px;
+    height: 20px;
+}
+
+aside .menu {
+
+    width: 300px;
+    background-color: rgb(255, 255, 255);
+    height: 100vh;
+    margin-top: 0px;
+    padding-top: 30px;
+    transform: translate(-100%);
+    border-radius: 0 10px;
+    transition: 1s ease-in-out;
+}
+
+nav .nav-menu {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: 'Rajdhani';
+}
+nav .nav-menu a:hover{
+    color: #eb0028;
+    transition: all 0.2s linear;
+}
+nav a i {
+    display: block;
+    width: 40px !important;
+    height: 20px;
+}
+aside .menu {
+    transition: 0.5s ease-in-out;
+}
+
+aside .menu.active {
+    transform: translate(0%);
+    transition: 1s ease-in-out;
+}
+
+aside .menu a {
+    padding-left: 40px;
+
+    width: 100%;
+    color: black;
+    font-size: 20px;
+    text-transform: capitalize;
+
+}
+
+aside .menu a:hover {
+    background-color: #e5e5e5;
+    transition: 1s ease-in-out;
+}
+
+nav .toggle-button {
+    display: none;
+    cursor: pointer;
+}
+
+nav .toggle-shopping {
+    cursor: pointer;
+}
+
+.Sidbar-right {
+    display: none;
+    padding-top: 30px;
+    background-color: rgb(255, 255, 255);
+    color: #000000;
+    position: relative;
+    width: 300px !important;
+    height: 100vh !important;
+    position: absolute;
+    top: 0;
+    right: 0;
+    border-radius: 10px 0px;
+    transition: 1s ease-in-out;
+    transform: translate(+100%);
+    z-index: 999;
+}
+
+.Sidbar-right.active {
+    transform: translate(0%);
+    transition: 1s ease-in-out;
+}
+
+.Sidbar-right .close-button {
+    position: absolute;
+    top: 0;
+    right: 20px;
+    border: none !important;
+    background-color: inherit !important;
+    color: #eb0028;
+    font-size: 30px;
+}
+
+.Sidbar .close-button-left {
+    position: absolute;
+    top: 0;
+    right: 20px;
+    border: none !important;
+    background-color: inherit !important;
+    color: #eb0028;
+    font-size: 30px;
+}
+
+.Sidbar-right .side-button {
+    width: 180px;
+    height: 50px;
+    border-radius: 30px;
+    background-color: rgb(255, 255, 255);
+    color: #000000;
+    border: 1px solid #000000;
+
+}
+
+.Sidbar-right .side-button:hover {
+    background-color: #eb0028;
+}
+
+.Sidbar-right img {
+    object-fit: cover;
+    width: 200px;
+}
+
+.Sidbar-right .android-slide {
+    margin-top: 20px;
+    padding-bottom: 20px;
+    border: #e5e5e5;
+}
+
+.Sidbar-right .android-slide:hover {
+    border: 2px solid #eb0028;
+
+    transition: 0.5s;
+}
+
+.Sidbar-right .android-slide a:hover {
+    color: #eb0028 !important;
+
+}
+
+header .carousel {
+    margin-top: 10px;
+    position: relative;
+    z-index: 990;
+}
+
+.carousel .carousel-caption1 {
+    font-family: 'Rajdhani', 'Bebas Neue', 'Cinzel';
+    height: 100vh !important;
+    position: absolute;
+    right: 230px;
+    top: 40%;
+    color: white;
+}
+
+.carousel .carousel-caption1 h2 {
+    font-size: 55px;
+}
+
+.carousel .carousel-caption1 button {
+    width: 200px;
+    height: 50px;
+    background-color: #000000;
+    border: 2px solid white;
+    color: white;
+    border-radius: 20px;
+}
+
+.carousel .carousel-caption1 button:hover,
+.carousel .carousel-caption2 button:hover {
+    border: none;
+    background-color: #eb0028;
+}
+
+.carousel .carousel-caption2 {
+    font-family: 'Cinzel';
+    height: 100vh !important;
+    position: absolute;
+    right: 50%;
+    top: 20%;
+    color: rgb(5, 5, 5);
+}
+
+.carousel .carousel-caption2 h1 {
+    font-size: 80px !important;
+}
+
+.carousel .carousel-caption2 button {
+    width: 200px;
+    height: 50px;
+    background-color: #ffffff;
+    border: 2px solid rgb(0, 0, 0);
+    color: rgb(0, 0, 0);
+    border-radius: 20px;
+}
+
+.carousel .carousel-caption1 button:hover {
+    border: none;
+    background-color: #eb0028;
+}
+header .Cookies{
+    width: 100%;
+    height: 150px;
+    border-radius: 10px;
+    background-color: #eb0028;
+    color: #fff;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+}
+header .Cookies p{
+    font-size: 25px;
+}
+header .Cookies .Cookies-button button{
+    width: 200px;
+    height: 70px;
+    background-color: #000;
+    color: #fff;
+    font-size: 20px;
+    border-radius: 20px;
+}
+#sec1 h1,
+#sec1 p,
+#sec2 h1,
+#sec2 p,
+#sec3 .title h1,
+#sec3 .title p,
+#sec6 .title h1, 
+#sec6 .title p{
+    font-family: 'Rajdhani', sans;
+    letter-spacing: 4px;
+
+}
+
+#sec1 .ic {
+    width: 300px;
+}
+
+#sec1 .ic p {
+    width: 200px;
+    margin-left: 50px;
+}
+
+#sec1 .ic img:hover {
+    scale: 0.9;
+}
+
+#sec2 {
+    margin-top: 250px;
+}
+
+#sec2 .sec2-specification .point {
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    background-color: #000000;
+    position: relative;
+    bottom: 325px;
+    left: 48%;
+}
+
+#sec2 .sec2-specification .point2 {
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    background-color: #000000;
+    position: relative;
+    bottom: 250px;
+    left: 48%;
+}
+
+#sec2 .sec2-specification .spec-info,
+#sec2 .sec2-specification .spec-info2 {
+    width: 250px;
+
+}
+
+#sec2 .sec2-specification .spec-info2 {
+    margin-top: 150px;
+}
+
+#sec2 .sec2-specification .spec-info2::before {
+    content: '';
+    width: 2px;
+    height: 380px;
+    background-color: #000000;
+    position: absolute;
+    bottom: 225px;
+}
+
+#sec2 .sec2-specification .spec-info::before {
+    content: '';
+    width: 2px;
+    height: 315px;
+    background-color: #000000;
+    position: absolute;
+    bottom: 290px;
+}
+
+#sec3 {
+    margin-top: 350px;
+}
+
+#sec3 .sec3-content {
+    width: 30%;
+}
+
+#sec3 .sec3-content .sec3-text-right {
+    text-align: right !important;
+    font-size: 18px;
+}
+
+#sec3 .sec3-content .sec3-text-left {
+    text-align: left !important;
+    font-size: 18px;
+}
+
+#sec3 .sec3-content .sec3-text-left img:hover,
+#sec3 .sec3-content .sec3-text-right img:hover {
+    transform: scale(0.8);
+}
+
+#sec4 {
+    margin-top: 300px;
+    background-image: url('./../img/sec-fixed-image.jpeg');
+    height: 100vh !important;
+    background-size: cover;
+    background-position: center center;
+    background-repeat: no-repeat;
+    width: 100%;
+    object-fit: cover;
+    object-position: center;
+    background-attachment: fixed;
+    text-align: center;
+    color: #ffffff;
+
+}
+
+#sec4 .main-text p {
+    font-size: 60px;
+
+    font-family: 'Rajdhani', sans;
+
+}
+
+#sec4 .text-content .sec4-button {
+    width: 200px;
+    height: 50px;
+    background-color: #ffffff;
+    color: #000;
+    border-radius: 30px;
+    font-size: 17px;
+    font-weight: 500;
+}
+
+#sec4 .text-content .sec4-button:hover {
+    background-color: #eb0028;
+    color: #ffffff;
+    border: none;
+}
+
+#sec5 {
+    margin-top: 50px;
+    height: max-content;
+}
+#sec5 .title{
+    font-family: 'Rajdhani';
+}
+#sec5 .slide-content {
+    padding: 40px ;
+    border-radius: 15px;
+    background-image: linear-gradient(to left top ,#ebebeb, #000000 ,#dfdbe2);
+    max-width: 1050px;
+    width: 100%;
+    height: 590px !important;
+    position: relative;
+    margin-bottom: 40px;
+}
+#sec5 .slide-content i.navigation{
+    width: 50px;
+    height: 50px;
+    font-size: larger;
+    background-color: #17c4f0;
+    color: #000;
+    border-radius: 50%;
+    text-align: center !important;
+    line-height: 50px;
+    font-weight: 700;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    z-index: 999;
+    cursor: pointer;
+}
+#sec5 .slide-content i.navigation:first-child{
+    left: -22px;
+}
+#sec5 .slide-content i.navigation:last-child{
+    right: -22px;
+}
+#sec5 .new-arrivel-content{
+    display: grid;
+    grid-auto-flow: column;
+    grid-auto-columns: calc((100% / 3) - 12px);
+    gap: 28px;
+    overflow: hidden !important;
+    scroll-behavior: smooth;
+}
+#sec5 .card {
+    width: 280px;
+    height: 510px;
+    position: relative;
+    z-index: 90;
+    /* margin-left: 100px; */
+}
+
+#sec5 .card:hover {
+    border: 1px solid #eb0028;
+}
+
+#sec5 .card .card-img-top {
+    width: 278px !important;
+    height: 278px !important;
+    
+    padding-bottom: 30px;
+    overflow: hidden;
+    object-fit: cover !important;
+}
+
+#sec5 .card .card-body {
+    background-color: #f3f3f3;
+}
+#sec5 .card  .add-to-cart{
+    position: absolute;
+    background-color: #eb0028;
+    color: #000000;
+    top: 87%;
+    width: 100%;
+    height: 100%;
+    transform-origin: bottom;
+    transform: translateY(+30%);
+    transition: transform 1s;
+    z-index: 999;
+    cursor: pointer;
+    font-family: 'Rajdhani';
+    }
+.card:hover .add-to-cart  {
+    transform: translateY(0) !important;
+}
+#sec5 .card .card-body {
+    font-family: 'Rajdhani';
+}
+
+#sec5 .card .card-body .card-title {
+    font-family: 'Cinzel';
+    height: 65px;
+}
+
+#sec5 .card .card-body .oldPrice {
+    color: #000000;
+    text-decoration: line-through;
+    font-weight: 400;
+    letter-spacing: 2px;
+}
+
+#sec5 .card .card-body .newPrice {
+    color: #eb0028;
+    font-size: larger;
+    font-weight: 700;
+    letter-spacing: 2px;
+}
+#sec6 {
+    background-image: url('./../img/sec6-main-image.jpeg');
+    object-fit: cover;
+    height: max-content;
+    padding-bottom: 200px;
+}
+#sec6  .title{
+    color: #ffffff;
+}
+#sec6 .main-content img{
+    width: 450px;
+    height: 600px;
+    object-fit: cover;
+}
+#accordion .accordion-item ,#accordion .accordion-button{
+    color: #ffffff !important;
+    width: 600px !important;
+    background-color: transparent !important;
+    text-align: left !important;
+    
+}
+.accordion-button i{
+    padding-left: 280px;
+}
+.accordion-button::after{
+
+    display: none !important;
+}
+#accordion .accordion-item .accordion-button{
+    font-family: 'Rajdhani' ;
+    font-size: 25px;
+}
+footer .up-container{
+    
+    background-image: url('./../img/footer.jpg');
+    height: 100vh !important;
+    background-size: cover;
+    background-position: center center;
+    background-repeat: no-repeat;
+    width: 100%;
+    object-fit: cover;
+    object-position: center;
+    background-attachment: fixed;
+    text-align: center;
+    color: #ffffff;
+    display: flex ;
+    align-items: center;
+    justify-content: center;
+    font-family:'Rajdhani' ;
+    position: relative;
+}
+
+footer .title h1{
+    font-size: 40px !important;
+    
+}
+footer .email-id input{
+    width: 400px;
+    height: 49px;
+    padding-left: 20px;
+    color: #000;
+    font-size: 18px;
+    font-weight: 700;
+    border-radius: 20px;
+    background-color: rgb(255, 255, 255);
+    outline: none;
+    border: none;
+
+}
+footer .email-id i{
+    background-color: #000;
+    text-align: center;
+    width: 40px !important;
+    height: 40px !important;
+    line-height: 40px;
+    font-size: 20px;
+    border-radius: 50%;
+    position: relative;
+    top: 5px;
+    right: 50px;
+    cursor: pointer;
+    z-index: 999;
+}
+footer .footer-anchor{
+    padding-top: 100px;
+    width: 700px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    
+}
+footer .footer-anchor a{
+    padding-right: 20px;
+    color: #fff;
+    
+    position: relative;
+    text-transform: uppercase;
+    font-family: 'Roboto ' !important ;
+    font-weight: 500;
+}
+footer .footer-anchor a:not(:last-child)::after{
+    content: '';
+    width: 3px;
+    height: 21px;
+    background-color: #fff;
+    position: absolute;
+    right: 0px;
+    
+}
+footer .footer-anchor a:hover{
+    color: #eb0028;
+    transition: all 0.3s linear;
+}
+footer .down-container{
+    width: 100%;
+
+}
+footer .down-container .content{
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    background-color: rgb(236, 236, 236);
+    flex-wrap: wrap;
+}
+footer .down-container .content a{
+    color: #000 !important;
+}
+footer .down-container .content a:hover{
+    color: #eb0028 !important;
+}
+
+
+@media screen and (max-width : 768px) {
+    body{
+        overflow-x: hidden !important;
+    }
+    header .sales{
+        height: 30px;
+    }
+    header .sales h4{
+        font-size: 10px !important;
+        padding-bottom: 20px !important;
+        
+    }
+    header .sales i{
+        font-size: 18px !important;
+    }
+    
+    nav .navbar-brand img {
+        width: 100px;
+        height: 30px;
+    }
+
+    nav .toggle-button {
+        display: block;
+    }
+
+    nav .nav-menu {
+        display: none;
+    }
+
+    .carousel {
+        width: 100vw;
+        height: min-content !important;
+    }
+
+    .carousel .carousel-caption1 {
+        height: max-content !important;
+        position: absolute;
+        right: 50px;
+        top: 20%;
+        color: white;
+
+    }
+
+    .carousel .carousel-caption1 h2 {
+        font-size: small !important;
+
+    }
+
+    .carousel .carousel-caption1 button,
+    .carousel .carousel-caption2 button {
+        width: 100px;
+        height: 40px;
+        font-size: 13px;
+        font-style: none;
+    }
+
+    .carousel .carousel-caption2 h1,
+    h3 {
+        font-size: 15px !important;
+    }
+    header .Cookies p{
+        font-size: 20px;
+    }
+    header .Cookies .Cookies-button button{
+        width: 90px;
+        height: 30px;
+        font-size: 16px;
+    }
+    #sec1 {
+        text-align: center;
+        height: 1500px !important;
+        padding-top: 100px;
+    }
+
+    #sec1 p,
+    #sec1 h3,
+    #sec1 h4 {
+        font-size: 18px !important;
+    }
+
+    #sec1 h1,
+    #sec2 h1,
+    #sec3 h1 {
+        font-size: 23px;
+    }
+
+    #sec1 .second-text,
+    #sec2 .second-text,
+    #sec3 .second-text {
+        font-size: 20px !important;
+    }
+
+    #sec1 .ic img {
+        scale: 0.6;
+    }
+
+    #sec2 .sec2-image {
+        width: 350px;
+        object-fit: cover;
+    }
+    #sec2{
+        margin-top: 0;
+    }
+    #sec2 .sec2-specification .point,
+    #sec2 .sec2-specification .point2,
+    #sec2 .sec2-specification .spec-info::before,
+    #sec2 .sec2-specification .spec-info2::before {
+        display: none;
+    }
+    #sec2 .spinner-1{
+        position: absolute;
+        bottom: -5px;
+        right: -11px;
+    }
+    #sec2 .sec2-specification .spec-info2 {
+        margin-top: 0;
+    }
+
+    #sec3 {
+        margin-top: 600px;
+    }
+
+    #sec3 .sec3-all-content {
+        justify-content: space-evenly !important;
+    }
+
+    #sec3 .sec3-content .sec3-text-left img,
+    #sec3 .sec3-content .sec3-text-right img {
+        width: 40px;
+        height: 40px;
+    }
+
+    #sec3 .sec3-content .sec3-text-left,
+    #sec3 .sec3-content .sec3-text-right {
+        font-size: 15px;
+    }
+
+    #sec3 .sec3-content {
+        width: 40%;
+        height: 750px;
+        margin-left: 10px;
+    }
+
+    #sec3 .sec3-main-image {
+        order: -1;
+        width: 300px !important;
+        height: 400px;
+    }
+
+    #sec3 .sec3-content-item {
+        height: 260px !important;
+    }
+
+    #sec4 {
+        margin-top: 500px;
+    }
+
+    #sec4 .main-text p {
+        font-size: 25px !important;
+        font-weight: 200 !important;
+    }
+
+    #sec4 .name {
+        font-size: 18px !important;
+        font-weight: 100 !important;
+    }
+    #sec5 .slide-content{
+        width: 340px;
+        padding-left: 45px;
+    }
+    #sec5 .new-arrivel-content{
+
+        grid-auto-columns: 100%;
+        gap: 40px;
+    }
+    #sec5 .card .card-img-top {
+        width: 248px !important;
+        height: 248px !important;
+    }
+    #sec5 .card {
+        width: 250px;
+    }
+
+    #sec6 .main-content img{
+        width: 300px;
+        height: 400px;
+        object-fit: cover;
+    }
+    #accordion .accordion-button{
+        font-size: 20px !important;
+        width: 300px !important;
+    }
+    .accordion-button i{
+        padding-left: 100px;
+    }
+    #accordion .accordion-item {
+        color: #ffffff !important;
+        width: 300px !important;
+        font-size: 16px !important;
+    }
+    footer .title h1{
+        font-size: 22px !important;
+    }
+    footer .footer-anchor{
+        width: 350px;
+        padding-top: 25px;
+        justify-content: space-evenly;
+        flex-direction: column;
+        gap: 20px;
+    }
+    footer .footer-anchor a:not(:last-child)::after{
+        display: none;
+    }
+    footer .email-id input{
+        width: 250px !important;
+        
+    }
+}
